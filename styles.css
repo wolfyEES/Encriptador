@@ -1,0 +1,140 @@
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+label {
+    font-weight: bold;
+}
+
+textarea {
+    width: calc(50% - 12px); 
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; 
+}
+
+button {
+    display: inline-block;
+    width: auto;
+    padding: 10px 15px; 
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+body {
+    position: relative;
+}
+
+@media screen and (min-width: 601px) {
+    .img-container {
+        float: right; 
+        margin-right: 50px; 
+        margin-top: -600px; 
+        position: relative; 
+    }
+
+    .img-container img {
+        max-width: 500px; 
+        width: auto; 
+        height: auto; 
+        display: block; 
+    }
+}
+
+
+
+
+/* para celulares */
+@media screen and (max-width: 600px) {
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    div {
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    textarea {
+        width: calc(100% - 20px); /* El 20px es para compensar el padding */
+        height: 150px;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        resize: vertical; /* Permitir que el usuario cambie la altura verticalmente */
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        padding: 10px 15px; /* Ajustar el padding según sea necesario */
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .img-container {
+        text-align: center; 
+        margin-top: 20px;
+    }
+
+    .img-container img {
+        max-width: 100%; 
+        height: auto; 
+        display: inline-block; 
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .img-container {
+        float: right; 
+        margin-right: 50px; 
+        margin-top: -600px; 
+        position: relative; 
+    }
+
+    .img-container img {
+        max-width: 500px; /* Tamaño máximo de la imagen en pantallas de computadora */
+        width: auto; /* Permite que la imagen conserve su relación de aspecto */
+        height: auto; /* La altura se ajustará automáticamente */
+        display: block; /* Elimina el espacio extra debajo de la imagen */
+    }
+}
+
